@@ -19,18 +19,6 @@ import unionPayIcon from '../../public/pictures/payment/unionPay.svg'
 import visaIcon from '../../public/pictures/payment/visa.svg'
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 const mobileMediaQuery = '(max-width: 750px)';
 
 const ToggleItem = ({description, key}) => {
@@ -100,19 +88,21 @@ const testData = ['MENU1','MENU2','MENU3']
               testData.map((d, id) => { return <ToggleItem description={d} key={id}/> })
             }
           </div>
-          <div id='social__icons'>
-            <a href='https:www.facebook.com'><Image src={facebookIcon} alt='Facebook icon' className='socialEmote'/></a>
-            <a href='https:www.instagram.com'><Image src={instagramIcon} alt='Instagram icon' className='socialEmote'/></a>
-            <a href='https:www.linkedin.com'><Image src={linkedinIcon} alt='linkedin icon' className='socialEmote'/></a>
-            <a href='https:www.twitter.com'><Image src={twitterIcon} alt='twitter icon' className='socialEmote'/></a>
-            <a href='https:www.youtube.com'><Image src={youtubeIcon} alt='youtube icon' className='socialEmote'/></a>
-          </div>
-          <div id='copyright'>
-            Copyright © Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-          <div id='disclaimer'>
-            This is just a test production
-          </div>
+        </div>
+      </div>
+      <div id='cp__right'>
+        <div id='social__icons'>
+          <a href='https:www.facebook.com'><Image src={facebookIcon} alt='Facebook icon' className='socialEmote'/></a>
+          <a href='https:www.instagram.com'><Image src={instagramIcon} alt='Instagram icon' className='socialEmote'/></a>
+          <a href='https:www.linkedin.com'><Image src={linkedinIcon} alt='linkedin icon' className='socialEmote'/></a>
+          <a href='https:www.twitter.com'><Image src={twitterIcon} alt='twitter icon' className='socialEmote'/></a>
+          <a href='https:www.youtube.com'><Image src={youtubeIcon} alt='youtube icon' className='socialEmote'/></a>
+        </div>
+        <div id='copyright'>
+          Copyright © Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div id='disclaimer'>
+          This is just a test production
         </div>
       </div>
     </main>
